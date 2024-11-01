@@ -6,12 +6,12 @@
 #    By: gneto-co <gneto-co@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/23 13:11:28 by tblaase           #+#    #+#              #
-#    Updated: 2024/11/01 16:14:59 by gneto-co         ###   ########.fr        #
+#    Updated: 2024/11/01 16:14:48 by gneto-co         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	unnecessary_violence
-EX			=	03
+NAME		=	harl2.0
+EX			=	05
 
 CC			=	c++
 
@@ -32,7 +32,7 @@ UP			=	\033[A
 CUT			=	\033[K
 
 #source files
-SRC_FILES	=	main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+SRC_FILES	=	main.cpp Harl.cpp
 
 OBJ_FILES	=	$(SRC_FILES:.cpp=.o)
 
@@ -44,12 +44,12 @@ OBJ			=	$(addprefix $(OBJ_DIR), $(OBJ_FILES))
 all: $(NAME)
 	@printf "\n"
 	@printf "$(GREEN)            ___ ___        ___    _____    _     _   \n$(RESET)"
-	@printf "$(GREEN) ___ _ _   |   |_  |   ___|  _|  |    _| _| |_ _| |_ \n$(RESET)"
+	@printf "$(GREEN) ___ _ _   |   |  _|   ___|  _|  |    _| _| |_ _| |_ \n$(RESET)"
 	@printf "$(GREEN)| -_|_'_|  | | |_  |  | . |  _|  |   |_ |_   _|_   _|\n$(RESET)"
 	@printf "$(GREEN)|___|_,_|  |___|___|  |___|_|    |_____|  |_|   |_|  \n$(RESET)"
 	@printf "$(GREEN)                                                     \n$(RESET)"
 	@printf "\n"
-                                                      
+                                            
 #compile the executable
 $(NAME): $(OBJ)
 	@echo "$(YELLOW)Compiling [$(NAME)]...$(RESET)"
